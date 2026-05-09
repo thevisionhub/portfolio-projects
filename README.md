@@ -1,75 +1,105 @@
-# Full-Stack Web Development Portfolio Projects
+# SneakVault - Mini E-commerce Store
 
-This repository contains five client-focused web development portfolio projects. Each project has a polished frontend, a deployable Node.js backend API, documentation, and a clear upgrade path for real client work.
+SneakVault is a modern mini e-commerce website built for sneaker stores and small product businesses. It includes product listing, filters, product details, cart functionality, checkout form UI, and WhatsApp checkout.
 
-## Projects
+## Project Overview
 
-1. SpiceHub Restaurant Website
-   - Restaurant ordering website with menu, cart summary, WhatsApp order preview, and backend API.
+SneakVault is a responsive mini e-commerce store built for sneaker brands and small product businesses. It includes product listing, search and filters, product details, cart functionality, checkout form UI, and WhatsApp order integration.
 
-2. TaskFlow SaaS Landing Page
-   - SaaS landing page with pricing, features, FAQ, contact form, lead API, and trial request API.
+## Problem
 
-3. DevFolio Pro Portfolio Template
-   - Personal portfolio template with skills, project filtering, resume section, blog cards, and contact API.
+Small businesses often want to sell products online but do not need a complex e-commerce platform with payment gateways, user accounts, and backend systems. They need a simple, affordable, and professional store that allows customers to browse products and place orders easily.
 
-4. SneakVault Mini E-commerce
-   - Sneaker store with product filters, modal details, cart, checkout UI, WhatsApp checkout, and order API.
+## Solution
 
-5. MetricFlow Business Dashboard
-   - Analytics dashboard with sidebar views, metrics, charts, search suggestions, settings, logout flow, and backend API.
+This project lets customers browse sneakers, filter products, view details, select sizes, add items to cart, fill a checkout form, and generate a complete WhatsApp order summary.
+
+## Features
+
+- Responsive product listing
+- 10 sneaker products
+- Local brand-free product photos
+- Product search
+- Category filter
+- Price filter
+- Product sorting
+- Product details modal
+- Size selection
+- Add to cart
+- Remove from cart
+- Update quantity
+- Cart saved in localStorage
+- Checkout form UI
+- WhatsApp order summary
+- Premium dark UI
+- Featured collection
+- Trust badges
+- Size guide
+- FAQ section
+- Newsletter UI
+- Mobile-friendly design
+- Backend demo API
 
 ## Tech Stack
+
+Current demo:
 
 - HTML
 - CSS
 - JavaScript
-- React and Vite for the dashboard project
-- Node.js backend APIs
-- Local JSON demo storage
+- Node.js backend demo
+- Local JSON file storage
 
-## Live Demo Structure
+Recommended production upgrade:
 
-When deployed with GitHub Pages, the project URLs can look like this:
+- React
+- Tailwind CSS
+- JavaScript
+- Vite
 
-```text
-https://yourusername.github.io/portfolio-projects/
-https://yourusername.github.io/portfolio-projects/SpiceHub/
-https://yourusername.github.io/portfolio-projects/taskflow-saas-landing-page/
-https://yourusername.github.io/portfolio-projects/devfolio-pro/
-https://yourusername.github.io/portfolio-projects/sneakvault-mini-ecommerce/
-https://yourusername.github.io/portfolio-projects/metricflow-business-dashboard/
-```
+## Backend Routes
 
-## Backend
+Live API demo:
 
-Each project includes its own backend file:
+- `https://sneakvault-backend-uu6b.onrender.com/api/health`
 
-```text
-SpiceHub/backend.js
-taskflow-saas-landing-page/backend.js
-devfolio-pro/backend.js
-sneakvault-mini-ecommerce/backend.js
-metricflow-business-dashboard/backend.js
-```
+Routes:
 
-Run any backend with:
+- `GET /api/health`
+- `GET /api/products`
+- `GET /api/products?category=Running&price=80-120&sort=low-high`
+- `GET /api/products/:id`
+- `GET /api/orders`
+- `GET /api/orders/:id`
+- `POST /api/orders/whatsapp`
+- `GET /api/newsletter`
+- `POST /api/newsletter`
+
+## Run Backend
 
 ```bash
 npm start
 ```
 
-The backend APIs are designed for portfolio demonstration. They use local JSON storage so the projects remain free and simple to review. For production, the storage can be upgraded to Supabase, PostgreSQL, MongoDB, or another hosted database.
+The backend demo runs on port `4300`.
 
-## Recommended Free Deployment
+Demo orders and newsletter subscribers are validated and saved in local JSON files inside the `data` folder.
 
-- Frontend: GitHub Pages
-- Backend: Render Free or Koyeb Free
-- Database later: Supabase Free
+The hosted GitHub Pages frontend is connected to the Render backend URL in `script.js` through `API_BASE_URL`.
 
-See `FREE_FULL_STACK_DEPLOYMENT_GUIDE.md` for the full plan.
+## Purpose
 
-## Portfolio Pitch
+This project is designed for small businesses that want a simple online store without building a complex backend or payment gateway system.
 
-These projects show practical freelance web development skills: responsive UI, business-focused layouts, cart systems, WhatsApp ordering, dashboard UI, form validation, backend routes, and deployment-ready project structure.
+## Future Improvements
 
+- React version
+- Tailwind CSS version
+- Payment gateway integration
+- Admin dashboard
+- Inventory management
+- User accounts
+- Wishlist
+- Order tracking
+- Backend database
+- Supabase or PostgreSQL storage
