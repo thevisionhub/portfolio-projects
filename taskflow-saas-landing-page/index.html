@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="TaskFlow is a portfolio demo SaaS landing page for a fictional productivity and project management platform."
+    />
+    <title>TaskFlow | SaaS Landing Page Portfolio Demo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="TaskFlow home">
+        <span class="brand-mark">TF</span>
+        <span>
+          TaskFlow
+          <small>Portfolio Demo</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+        <i data-lucide="menu"></i>
+        <span class="nav-bars" aria-hidden="true"></span>
+        <span class="sr-only">Menu</span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" data-nav>
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+        <button class="nav-demo-cta" type="button" data-demo-action="trial">Try Demo</button>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">
+          <i data-lucide="moon"></i>
+          <span>Mode</span>
+        </button>
+      </nav>
+    </header>
+
+    <section class="demo-banner" role="note" aria-label="Portfolio demo notice">
+      <div class="section-shell demo-banner-inner">
+        <strong>Portfolio demo website</strong>
+        <span>Fictional demo. No real signup, payment, or message is sent.</span>
+      </div>
+    </section>
+
+    <main id="top">
+      <section class="hero section">
+        <div class="section-shell hero-layout">
+          <div class="hero-copy">
+            <p class="eyebrow">Modern SaaS Landing Page for Startups</p>
+            <h1>Manage Projects Faster with Smarter Task Automation</h1>
+            <p>
+              TaskFlow helps startups and growing teams organize tasks, automate workflows, and collaborate
+              without getting lost in messy spreadsheets or endless chat messages.
+            </p>
+            <div class="hero-actions">
+              <button class="button button-primary" type="button" data-demo-action="trial">
+                <i data-lucide="rocket"></i>
+                Start Free Trial
+              </button>
+              <a class="button button-secondary" href="#pricing">
+                <i data-lucide="badge-dollar-sign"></i>
+                View Pricing
+              </a>
+            </div>
+            <p class="trust-text">No credit card required. Launch your workspace in under 2 minutes.</p>
+            <div class="hero-tags" aria-label="TaskFlow product strengths">
+              <span><i data-lucide="kanban-square"></i> Tasks</span>
+              <span><i data-lucide="workflow"></i> Automation</span>
+              <span><i data-lucide="chart-line"></i> Analytics</span>
+            </div>
+            <div class="hero-proof" aria-label="Example teams this landing page targets">
+              <span>Built for</span>
+              <strong>AI tools</strong>
+              <strong>Product teams</strong>
+              <strong>Startup launches</strong>
+            </div>
+          </div>
+
+          <div class="dashboard-mockup" aria-label="TaskFlow dashboard mockup">
+            <div class="mockup-header">
+              <div>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <strong>TaskFlow Workspace</strong>
+              <button type="button" aria-label="Demo dashboard settings">
+                <i data-lucide="settings-2"></i>
+              </button>
+            </div>
+            <div class="mockup-app">
+              <aside class="mockup-sidebar" aria-label="Dashboard navigation preview">
+                <span class="active"><i data-lucide="layout-dashboard"></i> Overview</span>
+                <span><i data-lucide="kanban-square"></i> Board</span>
+                <span><i data-lucide="calendar-days"></i> Timeline</span>
+                <span><i data-lucide="bot"></i> Automations</span>
+              </aside>
+
+              <div class="mockup-content">
+                <div class="mockup-topline">
+                  <div>
+                    <span>Product Sprint</span>
+                    <strong>Q3 Launch Plan</strong>
+                  </div>
+                  <button type="button" data-demo-action="trial">Automation On</button>
+                </div>
+                <div class="mockup-metrics">
+                  <article>
+                    <span>Open tasks</span>
+                    <strong>48</strong>
+                  </article>
+                  <article>
+                    <span>Blocked</span>
+                    <strong>03</strong>
+                  </article>
+                  <article>
+                    <span>Velocity</span>
+                    <strong>+22%</strong>
+                  </article>
+                </div>
+
+                <div class="mockup-grid">
+                  <section class="mockup-panel task-board">
+                    <div class="panel-title">
+                      <span>Priority Tasks</span>
+                      <strong>72%</strong>
+                    </div>
+                    <article>
+                      <span class="status-dot blue"></span>
+                      <div>
+                        <strong>Design onboarding flow</strong>
+                        <p>Due today</p>
+                      </div>
+                    </article>
+                    <article>
+                      <span class="status-dot purple"></span>
+                      <div>
+                        <strong>Automate weekly reports</strong>
+                        <p>In progress</p>
+                      </div>
+                    </article>
+                    <article>
+                      <span class="status-dot green"></span>
+                      <div>
+                        <strong>Review sprint roadmap</strong>
+                        <p>Ready</p>
+                      </div>
+                    </article>
+                  </section>
+
+                  <section class="mockup-panel chart-panel">
+                    <div class="panel-title">
+                      <span>Progress</span>
+                      <strong>+18%</strong>
+                    </div>
+                    <div class="bar-chart">
+                      <span style="height: 42%"></span>
+                      <span style="height: 58%"></span>
+                      <span style="height: 70%"></span>
+                      <span style="height: 48%"></span>
+                      <span style="height: 82%"></span>
+                      <span style="height: 92%"></span>
+                    </div>
+                  </section>
+
+                  <section class="mockup-panel automation-panel">
+                    <div class="panel-title">
+                      <span>Automation</span>
+                      <strong>Live</strong>
+                    </div>
+                    <div class="automation-step">
+                      <i data-lucide="sparkles"></i>
+                      <span>When task is approved</span>
+                    </div>
+                    <div class="automation-line"></div>
+                    <div class="automation-step">
+                      <i data-lucide="bell-ring"></i>
+                      <span>Notify project owner</span>
+                    </div>
+                  </section>
+
+                  <section class="mockup-panel team-panel">
+                    <div class="panel-title">
+                      <span>Team</span>
+                      <strong>8 online</strong>
+                    </div>
+                    <div class="avatar-row">
+                      <span>SM</span>
+                      <span>DB</span>
+                      <span>ER</span>
+                      <span>NL</span>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section stats-section" aria-label="Demo performance counters">
+        <div class="section-shell stats-grid">
+          <article>
+            <strong data-counter data-target="42">0</strong>
+            <span>workflows automated</span>
+          </article>
+          <article>
+            <strong data-counter data-target="86">0</strong>
+            <span>task completion rate</span>
+          </article>
+          <article>
+            <strong data-counter data-target="24">0</strong>
+            <span>hours saved weekly</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="features">
+        <div class="section-shell">
+          <div class="section-heading">
+            <p class="eyebrow">Features</p>
+            <h2>Everything Your Team Needs to Move Faster</h2>
+            <p>
+              TaskFlow combines task management, workflow automation, and team collaboration into one simple platform.
+            </p>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-card">
+              <i data-lucide="list-checks"></i>
+              <h3>Smart Task Management</h3>
+              <p>Create, assign, and organize tasks with clear deadlines, priorities, and progress status.</p>
+            </article>
+            <article class="feature-card">
+              <i data-lucide="workflow"></i>
+              <h3>Workflow Automation</h3>
+              <p>Automate repetitive steps like task assignment, reminders, status updates, and follow-ups.</p>
+            </article>
+            <article class="feature-card">
+              <i data-lucide="messages-square"></i>
+              <h3>Team Collaboration</h3>
+              <p>Keep your team aligned with comments, file sharing, mentions, and real-time project updates.</p>
+            </article>
+            <article class="feature-card">
+              <i data-lucide="chart-no-axes-combined"></i>
+              <h3>Project Analytics</h3>
+              <p>Track progress, team performance, completion rate, and bottlenecks using simple analytics.</p>
+            </article>
+            <article class="feature-card">
+              <i data-lucide="calendar-days"></i>
+              <h3>Calendar &amp; Timeline View</h3>
+              <p>Plan work visually using calendar, timeline, and weekly planning views.</p>
+            </article>
+            <article class="feature-card">
+              <i data-lucide="shield-check"></i>
+              <h3>Secure Cloud Workspace</h3>
+              <p>Protect your workspace with secure access, role-based permissions, and cloud-based data storage.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section pricing-section" id="pricing">
+        <div class="section-shell">
+          <div class="section-heading centered">
+            <p class="eyebrow">Pricing</p>
+            <h2>Simple Pricing for Every Team</h2>
+            <p>Start free and upgrade when your team grows.</p>
+          </div>
+
+          <div class="pricing-grid" data-pricing-grid>
+            <article class="pricing-card" data-plan-card>
+              <div class="plan-top">
+                <h3>Free</h3>
+                <strong>$0<span>/month</span></strong>
+                <p>Solo users and students testing the product.</p>
+              </div>
+              <ul>
+                <li>Up to 3 projects</li>
+                <li>Basic task management</li>
+                <li>Calendar view</li>
+                <li>Limited automation</li>
+                <li>Community support</li>
+              </ul>
+              <button class="button button-secondary" type="button" data-demo-action="free">Get Started Free</button>
+            </article>
+
+            <article class="pricing-card featured active" data-plan-card>
+              <span class="plan-badge">Most Popular</span>
+              <div class="plan-top">
+                <h3>Pro</h3>
+                <strong>$12<span>/month per user</span></strong>
+                <p>Freelancers, small teams, and early-stage startups.</p>
+              </div>
+              <ul>
+                <li>Unlimited projects</li>
+                <li>Advanced task management</li>
+                <li>Workflow automation</li>
+                <li>Project analytics</li>
+                <li>Priority support</li>
+                <li>Team collaboration tools</li>
+              </ul>
+              <button class="button button-primary" type="button" data-demo-action="pro">Start Pro Trial</button>
+            </article>
+
+            <article class="pricing-card" data-plan-card>
+              <div class="plan-top">
+                <h3>Business</h3>
+                <strong>$29<span>/month per user</span></strong>
+                <p>Growing companies and professional teams.</p>
+              </div>
+              <ul>
+                <li>Everything in Pro</li>
+                <li>Advanced analytics</li>
+                <li>Role-based access</li>
+                <li>Custom workflows</li>
+                <li>Admin dashboard</li>
+                <li>Dedicated support</li>
+                <li>Team performance reports</li>
+              </ul>
+              <button class="button button-secondary" type="button" data-demo-action="business">Contact Sales</button>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="testimonials">
+        <div class="section-shell">
+          <div class="section-heading">
+            <p class="eyebrow">Testimonials</p>
+            <h2>Loved by Fast-Moving Teams</h2>
+          </div>
+          <div class="testimonial-grid">
+            <article class="testimonial-card">
+              <p>
+                &quot;TaskFlow helped our startup replace messy spreadsheets with one clean project dashboard.
+                Our weekly planning is much faster now.&quot;
+              </p>
+              <strong>Sarah Mitchell</strong>
+              <span>Founder, LaunchPilot</span>
+            </article>
+            <article class="testimonial-card">
+              <p>
+                &quot;The automation features saved our team hours every week. We use TaskFlow to manage product
+                tasks, marketing work, and client updates.&quot;
+              </p>
+              <strong>Daniel Brooks</strong>
+              <span>Operations Manager, BrightStack</span>
+            </article>
+            <article class="testimonial-card">
+              <p>
+                &quot;We needed a simple tool before scaling our team. TaskFlow gave us the structure we needed
+                without making project management complicated.&quot;
+              </p>
+              <strong>Emma Richardson</strong>
+              <span>Product Lead, NovaLabs</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section faq-section" id="faq">
+        <div class="section-shell faq-layout">
+          <div class="section-heading">
+            <p class="eyebrow">FAQ</p>
+            <h2>Frequently Asked Questions</h2>
+            <p>Clear answers for visitors comparing SaaS tools before launch.</p>
+          </div>
+
+          <div class="faq-list">
+            <article class="faq-item active">
+              <button type="button" aria-expanded="true">
+                Is TaskFlow free to use?
+                <i data-lucide="chevron-down"></i>
+              </button>
+              <p>Yes. TaskFlow includes a free plan for individuals and small teams who want to manage basic projects.</p>
+            </article>
+            <article class="faq-item">
+              <button type="button" aria-expanded="false">
+                Do I need a credit card to start?
+                <i data-lucide="chevron-down"></i>
+              </button>
+              <p>No. Users can start with the free plan without entering card details.</p>
+            </article>
+            <article class="faq-item">
+              <button type="button" aria-expanded="false">
+                Can I invite my team members?
+                <i data-lucide="chevron-down"></i>
+              </button>
+              <p>Yes. Pro and Business plans allow team collaboration with multiple members.</p>
+            </article>
+            <article class="faq-item">
+              <button type="button" aria-expanded="false">
+                Does TaskFlow support automation?
+                <i data-lucide="chevron-down"></i>
+              </button>
+              <p>Yes. TaskFlow includes workflow automation for reminders, task assignments, status updates, and recurring tasks.</p>
+            </article>
+            <article class="faq-item">
+              <button type="button" aria-expanded="false">
+                Can I upgrade or cancel anytime?
+                <i data-lucide="chevron-down"></i>
+              </button>
+              <p>Yes. Users can upgrade, downgrade, or cancel their plan anytime.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact">
+        <div class="section-shell contact-layout">
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h2>Ready to Build Your Workflow?</h2>
+            <p>
+              Send us a message and our team will help you choose the right plan for your business.
+            </p>
+            <p class="reply-note">We usually reply within 24 hours.</p>
+          </div>
+
+          <form class="contact-form" novalidate data-contact-form>
+            <label>
+              Full Name
+              <input type="text" name="name" autocomplete="name" required minlength="2" />
+            </label>
+            <label>
+              Work Email
+              <input type="email" name="email" autocomplete="email" required />
+            </label>
+            <label>
+              Company Name
+              <input type="text" name="company" autocomplete="organization" required minlength="2" />
+            </label>
+            <label>
+              Message
+              <textarea name="message" rows="5" required minlength="10"></textarea>
+            </label>
+            <p class="form-status" data-form-status aria-live="polite"></p>
+            <button class="button button-primary" type="submit">
+              <i data-lucide="send"></i>
+              Send Message
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="section-shell footer-grid">
+        <div>
+          <a class="brand footer-brand" href="#top" aria-label="TaskFlow home">
+            <span class="brand-mark">TF</span>
+            <span>
+              TaskFlow
+              <small>Portfolio Demo</small>
+            </span>
+          </a>
+          <p>Modern SaaS landing page for startup and software product portfolios.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#features">Features</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#faq">FAQ</a>
+          <button type="button" data-demo-action="footer">Demo CTA</button>
+        </div>
+      </div>
+      <div class="section-shell footer-bottom">
+        <span>&copy; 2026 TaskFlow. Portfolio demo project only.</span>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" async onload="window.lucide && window.lucide.createIcons()"></script>
+  </body>
+</html>

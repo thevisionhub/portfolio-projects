@@ -1,0 +1,17 @@
+{
+  "name": "spicehub-restaurant-website",
+  "version": "1.0.0",
+  "description": "Restaurant ordering website with menu API, cart order validation, contact messages, and WhatsApp order generation.",
+  "main": "backend.js",
+  "scripts": {
+    "start": "node backend.js"
+  },
+  "keywords": [
+    "restaurant",
+    "whatsapp-ordering",
+    "portfolio-project",
+    "node-backend"
+  ],
+  "author": "Portfolio Demo",
+  "license": "MIT"
+}

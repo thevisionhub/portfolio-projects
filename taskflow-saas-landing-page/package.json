@@ -1,0 +1,18 @@
+{
+  "name": "taskflow-saas-landing-page",
+  "version": "1.0.0",
+  "description": "SaaS landing page with pricing API, feature API, lead capture, and trial request backend.",
+  "main": "backend.js",
+  "scripts": {
+    "start": "node backend.js"
+  },
+  "keywords": [
+    "saas",
+    "landing-page",
+    "lead-capture",
+    "portfolio-project",
+    "node-backend"
+  ],
+  "author": "Portfolio Demo",
+  "license": "MIT"
+}

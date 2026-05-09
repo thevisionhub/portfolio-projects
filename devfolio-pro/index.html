@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="DevFolio Pro is a responsive personal portfolio website template for developers, creators, designers, freelancers, and students."
+    />
+    <title>DevFolio Pro | Developer Portfolio Template</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Sora:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="DevFolio Pro home">
+        <span class="brand-mark">DF</span>
+        <span>
+          DevFolio Pro
+          <small>Portfolio Template</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+        <i data-lucide="menu"></i>
+        <span class="sr-only">Menu</span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" data-nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+        <button class="theme-toggle" type="button" aria-label="Toggle dark mode" data-theme-toggle>
+          <i data-lucide="moon"></i>
+          <span>Theme</span>
+        </button>
+      </nav>
+    </header>
+
+    <section class="template-notice" role="note" aria-label="Template demo notice">
+      <div class="section-shell">
+        <strong>Template demo</strong>
+        <span>Alex Carter is fictional sample content. Replace details, links, and resume before publishing.</span>
+      </div>
+    </section>
+
+    <main id="top">
+      <section class="hero section">
+        <div class="section-shell hero-layout">
+          <div class="hero-copy">
+            <p class="eyebrow">Personal Portfolio Website for Developers & Creators</p>
+            <p class="hero-name">Alex Carter</p>
+            <p class="hero-role" data-typing-role>Frontend Developer & Creative Freelancer</p>
+            <h1>Building Modern Websites, Clean Interfaces, and Digital Experiences</h1>
+            <p>
+              I help startups, creators, and small businesses turn ideas into responsive,
+              user-friendly websites with clean design and practical functionality.
+            </p>
+
+            <div class="hero-actions">
+              <a class="button button-primary" href="#projects">
+                <i data-lucide="layout-grid"></i>
+                View Projects
+              </a>
+              <a class="button button-secondary" href="resume.html" download="devfolio-pro-sample-resume.html">
+                <i data-lucide="file-text"></i>
+                Download Resume
+              </a>
+            </div>
+
+            <p class="availability">
+              <i data-lucide="sparkles"></i>
+              Available for freelance projects, internships, and remote work.
+            </p>
+
+            <div class="role-switcher" aria-label="Template variation selector">
+              <button class="active" type="button" data-persona="developer">Developer</button>
+              <button type="button" data-persona="designer">Designer</button>
+              <button type="button" data-persona="editor">Video Editor</button>
+            </div>
+          </div>
+
+          <div class="hero-visual" aria-label="Portfolio preview">
+            <div class="profile-panel">
+              <div class="profile-cover">
+                <img
+                  src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=80"
+                  alt="Modern creative workspace with laptop and desk"
+                />
+              </div>
+              <div class="profile-card">
+                <div class="avatar">AC</div>
+                <div>
+                  <strong>Alex Carter</strong>
+                  <span data-profile-label>Frontend Developer</span>
+                </div>
+              </div>
+              <div class="profile-stats" aria-label="Portfolio statistics">
+                <article>
+                  <strong>24+</strong>
+                  <span>Projects</span>
+                </article>
+                <article>
+                  <strong>3 yrs</strong>
+                  <span>Experience</span>
+                </article>
+                <article>
+                  <strong>12</strong>
+                  <span>Clients</span>
+                </article>
+              </div>
+              <div class="tool-stack" data-hero-tools>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>React</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section about-section" id="about">
+        <div class="section-shell about-layout">
+          <div class="section-heading">
+            <p class="eyebrow">About Me</p>
+            <h2>Clean design, practical code, and business-focused thinking.</h2>
+          </div>
+          <div class="about-copy">
+            <p>
+              I am a frontend developer and creative freelancer focused on building clean,
+              responsive, and user-friendly websites. I enjoy turning ideas into real digital
+              products using modern web technologies.
+            </p>
+            <p>
+              My work combines design thinking, practical coding, and business-focused problem
+              solving. I build websites that not only look good but also help people present their
+              skills, services, and projects professionally.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section versions-section" id="versions">
+        <div class="section-shell">
+          <div class="section-heading centered">
+            <p class="eyebrow">Template Versions</p>
+            <h2>One portfolio system for developers, designers, and video editors.</h2>
+            <p>
+              DevFolio Pro is built as a reusable product-style template, so the same layout
+              can be adapted for different professions without rebuilding from scratch.
+            </p>
+          </div>
+
+          <div class="version-grid">
+            <article class="version-card">
+              <i data-lucide="code-2"></i>
+              <h3>Developer Version</h3>
+              <p>For coders, software students, frontend developers, full-stack developers, and AI/ML learners.</p>
+              <ul>
+                <li>Skills</li>
+                <li>Projects</li>
+                <li>GitHub</li>
+                <li>Resume</li>
+              </ul>
+            </article>
+
+            <article class="version-card">
+              <i data-lucide="pen-tool"></i>
+              <h3>Designer Version</h3>
+              <p>For UI/UX designers, graphic designers, brand designers, and product designers.</p>
+              <ul>
+                <li>Design tools</li>
+                <li>Case studies</li>
+                <li>Creative work</li>
+                <li>Testimonials</li>
+              </ul>
+            </article>
+
+            <article class="version-card">
+              <i data-lucide="clapperboard"></i>
+              <h3>Video Editor Version</h3>
+              <p>For video editors, motion designers, YouTube editors, and short-form content creators.</p>
+              <ul>
+                <li>Showreel</li>
+                <li>Editing services</li>
+                <li>Software skills</li>
+                <li>Client projects</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section skills-section" id="skills">
+        <div class="section-shell">
+          <div class="section-heading centered">
+            <p class="eyebrow">Skills & Tools</p>
+            <h2>Technologies and tools used to build modern digital experiences.</h2>
+          </div>
+
+          <div class="skill-tabs" aria-label="Skill category filters">
+            <button class="active" type="button" data-skill-filter="developer">Developer</button>
+            <button type="button" data-skill-filter="designer">Designer</button>
+            <button type="button" data-skill-filter="editor">Video Editor</button>
+            <button type="button" data-skill-filter="ai">AI & Automation</button>
+          </div>
+
+          <div class="skills-grid" data-skills-grid></div>
+        </div>
+      </section>
+
+      <section class="section projects-section" id="projects">
+        <div class="section-shell">
+          <div class="section-heading">
+            <p class="eyebrow">Featured Projects</p>
+            <h2>A collection of selected work, case studies, and creative experiments.</h2>
+          </div>
+
+          <div class="project-toolbar">
+            <div class="filter-buttons" aria-label="Project category filters">
+              <button class="active" type="button" data-project-filter="all">All</button>
+              <button type="button" data-project-filter="web">Websites</button>
+              <button type="button" data-project-filter="saas">SaaS</button>
+              <button type="button" data-project-filter="creative">Creative</button>
+            </div>
+            <label class="project-search">
+              <i data-lucide="search"></i>
+              <span class="sr-only">Search projects</span>
+              <input type="search" placeholder="Search projects" data-project-search />
+            </label>
+          </div>
+
+          <div class="project-grid" data-project-grid>
+            <article class="project-card" data-category="web" data-title="spicehub restaurant website">
+              <img
+                src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1000&q=80"
+                alt="Restaurant table with fresh food"
+              />
+              <div>
+                <span>Restaurant Website</span>
+                <h3>SpiceHub Restaurant Website</h3>
+                <p>
+                  A responsive restaurant ordering website where customers browse food items, add
+                  them to an order summary, and preview WhatsApp ordering.
+                </p>
+                <ul>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                </ul>
+                <div class="card-actions">
+                  <a href="../index.html">Live Demo</a>
+                  <button type="button" data-demo-action="code">View Code</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card" data-category="saas" data-title="taskflow saas landing page">
+              <img
+                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1000&q=80"
+                alt="Analytics dashboard on laptop"
+              />
+              <div>
+                <span>SaaS Landing Page</span>
+                <h3>TaskFlow SaaS Landing Page</h3>
+                <p>
+                  A modern SaaS landing page built for startups to showcase features, pricing,
+                  testimonials, FAQ, and contact details.
+                </p>
+                <ul>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                </ul>
+                <div class="card-actions">
+                  <a href="../taskflow-saas-landing-page/index.html">Live Demo</a>
+                  <button type="button" data-demo-action="code">View Code</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card" data-category="web" data-title="creator portfolio template">
+              <img
+                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1000&q=80"
+                alt="Developer workspace with code on screen"
+              />
+              <div>
+                <span>Portfolio Template</span>
+                <h3>Creator Portfolio Template</h3>
+                <p>
+                  A personal portfolio website template for developers, designers, freelancers,
+                  students, and digital creators.
+                </p>
+                <ul>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                </ul>
+                <div class="card-actions">
+                  <a href="#top">Live Demo</a>
+                  <button type="button" data-demo-action="code">View Code</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card" data-category="creative" data-title="editpro video editor portfolio">
+              <img
+                src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=1000&q=80"
+                alt="Video production camera and editing setup"
+              />
+              <div>
+                <span>Creative Portfolio</span>
+                <h3>EditPro Video Editor Portfolio</h3>
+                <p>
+                  A portfolio layout for video editors to showcase showreels, editing services,
+                  client work, and contact details.
+                </p>
+                <ul>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                </ul>
+                <div class="card-actions">
+                  <button type="button" data-demo-action="demo">Live Demo</button>
+                  <button type="button" data-demo-action="case-study">View Case Study</button>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <p class="empty-state" data-empty-state hidden>No matching projects found.</p>
+        </div>
+      </section>
+
+      <section class="section resume-section" id="resume">
+        <div class="section-shell resume-layout">
+          <div>
+            <p class="eyebrow">Resume</p>
+            <h2>Want to know more about my experience, education, and skills?</h2>
+            <p>
+              Use this section to link a real resume PDF, CV page, or downloadable document.
+              This demo includes a sample resume page for easy customization.
+            </p>
+          </div>
+          <div class="resume-actions">
+            <a class="button button-primary" href="resume.html" download="devfolio-pro-sample-resume.html">
+              <i data-lucide="download"></i>
+              Download Resume
+            </a>
+            <a class="button button-secondary" href="resume.html" target="_blank" rel="noreferrer">
+              <i data-lucide="external-link"></i>
+              View Resume
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section blog-section" id="blog">
+        <div class="section-shell">
+          <div class="section-heading">
+            <p class="eyebrow">Latest Articles</p>
+            <h2>Learning notes, portfolio tips, and project breakdowns.</h2>
+          </div>
+
+          <div class="blog-grid">
+            <article class="blog-card">
+              <span>Web Development</span>
+              <h3>How I Built My First Freelance Website</h3>
+              <p>A simple breakdown of how I planned, designed, and built my first client-ready website.</p>
+            </article>
+            <article class="blog-card">
+              <span>Career</span>
+              <h3>Why Every Student Needs a Portfolio Website</h3>
+              <p>A portfolio website helps students showcase skills, projects, resume, and learning progress.</p>
+            </article>
+            <article class="blog-card">
+              <span>Portfolio Tips</span>
+              <h3>How to Present Projects Like a Professional</h3>
+              <p>A guide to writing better project descriptions, case studies, and portfolio content.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact">
+        <div class="section-shell contact-layout">
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h2>Let's Work Together</h2>
+            <p>Have a project, internship opportunity, or collaboration idea? Send a message.</p>
+            <div class="contact-info">
+              <span><i data-lucide="mail"></i> alex.carter@example.com</span>
+              <span><i data-lucide="map-pin"></i> Remote / Available Worldwide</span>
+              <span><i data-lucide="clock"></i> Usually replies within 24 hours</span>
+            </div>
+          </div>
+
+          <form class="contact-form" novalidate data-contact-form>
+            <label>
+              Full Name
+              <input type="text" name="name" autocomplete="name" required minlength="2" />
+            </label>
+            <label>
+              Email Address
+              <input type="email" name="email" autocomplete="email" required />
+            </label>
+            <label>
+              Subject
+              <input type="text" name="subject" required minlength="3" />
+            </label>
+            <label>
+              Message
+              <textarea name="message" rows="5" required minlength="10"></textarea>
+            </label>
+            <p class="form-status" data-form-status aria-live="polite"></p>
+            <button class="button button-primary" type="submit">
+              <i data-lucide="send"></i>
+              Send Message
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="section-shell footer-grid">
+        <div>
+          <a class="brand footer-brand" href="#top" aria-label="DevFolio Pro home">
+            <span class="brand-mark">DF</span>
+            <span>
+              DevFolio Pro
+              <small>Portfolio Template</small>
+            </span>
+          </a>
+          <p>Built with passion for developers, creators, and freelancers.</p>
+        </div>
+        <div class="footer-links">
+          <button type="button" data-demo-action="social">LinkedIn</button>
+          <button type="button" data-demo-action="social">GitHub</button>
+          <button type="button" data-demo-action="social">Twitter/X</button>
+          <button type="button" data-demo-action="social">Instagram</button>
+          <button type="button" data-demo-action="social">Email</button>
+        </div>
+      </div>
+      <div class="section-shell footer-bottom">
+        <span>&copy; 2026 DevFolio Pro. All rights reserved.</span>
+      </div>
+    </footer>
+
+    <button class="back-to-top" type="button" aria-label="Back to top" data-back-to-top>
+      <i data-lucide="arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" async onload="window.lucide && window.lucide.createIcons()"></script>
+  </body>
+</html>

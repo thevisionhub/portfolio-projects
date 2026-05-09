@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="SneakVault is a premium mini e-commerce store demo with product filters, cart, checkout UI, and WhatsApp order flow."
+    />
+    <title>SneakVault | Mini E-commerce Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Sora:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="SneakVault home">
+        <span class="brand-mark">SV</span>
+        <span>
+          SneakVault
+          <small>Mini E-commerce</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+        <i data-lucide="menu"></i>
+        <span class="sr-only">Menu</span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" data-nav>
+        <a href="#shop">Shop</a>
+        <a href="#featured">Collections</a>
+        <a href="#size-guide">Size Guide</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+        <button class="cart-nav-button" type="button" data-cart-open aria-label="Open cart">
+          <i data-lucide="shopping-bag"></i>
+          <span>Cart</span>
+          <strong data-cart-count>0</strong>
+        </button>
+      </nav>
+    </header>
+
+    <section class="demo-banner" role="note" aria-label="Portfolio demo notice">
+      <div class="section-shell">
+        <strong>Portfolio demo</strong>
+        <span>No real payment is collected. WhatsApp checkout generates a demo order preview.</span>
+      </div>
+    </section>
+
+    <main id="top">
+      <section class="hero section">
+        <div class="section-shell hero-layout">
+          <div class="hero-copy">
+            <p class="eyebrow">Premium Sneaker Store for Small Brands</p>
+            <h1>Premium Sneakers for Every Street</h1>
+            <p>
+              Discover stylish, comfortable, and limited-edition sneakers built for everyday
+              movement and modern streetwear.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#shop">
+                <i data-lucide="shopping-bag"></i>
+                Shop Collection
+              </a>
+              <a class="button button-secondary" href="#featured">
+                <i data-lucide="flame"></i>
+                View Best Sellers
+              </a>
+            </div>
+            <p class="trust-line">Free size exchange - WhatsApp ordering - Fast local delivery</p>
+          </div>
+
+          <div class="hero-showcase" aria-label="Sneaker product showcase">
+            <img
+              src="assets/hero-sneaker-photo.jpg"
+              alt="Brand-free premium sneaker product photo"
+            />
+            <div class="hero-price-card">
+              <span>New Season Drop</span>
+              <strong>From $74</strong>
+              <small>10 curated styles</small>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section trust-section" aria-label="Store benefits">
+        <div class="section-shell trust-grid">
+          <article>
+            <i data-lucide="truck"></i>
+            <strong>Fast Delivery</strong>
+            <span>Local delivery for city orders</span>
+          </article>
+          <article>
+            <i data-lucide="shield-check"></i>
+            <strong>Secure Order</strong>
+            <span>Checkout details stay in your browser</span>
+          </article>
+          <article>
+            <i data-lucide="refresh-cw"></i>
+            <strong>Size Exchange</strong>
+            <span>Free size exchange within 7 days</span>
+          </article>
+          <article>
+            <i data-lucide="message-circle"></i>
+            <strong>WhatsApp Support</strong>
+            <span>Manual order confirmation</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="section featured-section" id="featured">
+        <div class="section-shell">
+          <div class="section-heading">
+            <p class="eyebrow">Featured Collection</p>
+            <h2>New Season Drops</h2>
+            <p>Three premium styles selected for comfort, streetwear, and everyday movement.</p>
+          </div>
+          <div class="featured-grid" data-featured-grid></div>
+        </div>
+      </section>
+
+      <section class="section products-section" id="shop">
+        <div class="section-shell">
+          <div class="section-heading">
+            <p class="eyebrow">Latest Sneaker Collection</p>
+            <h2>Browse premium sneakers selected for comfort, style, and everyday performance.</h2>
+          </div>
+
+          <div class="filter-panel">
+            <label class="search-field">
+              <i data-lucide="search"></i>
+              <span class="sr-only">Search by product name</span>
+              <input type="search" placeholder="Search sneakers" data-search />
+            </label>
+
+            <label>
+              Category
+              <select data-category-filter>
+                <option value="All">All</option>
+                <option value="Running">Running</option>
+                <option value="Casual">Casual</option>
+                <option value="Streetwear">Streetwear</option>
+                <option value="Sports">Sports</option>
+                <option value="Outdoor">Outdoor</option>
+                <option value="Premium">Premium</option>
+              </select>
+            </label>
+
+            <label>
+              Price
+              <select data-price-filter>
+                <option value="All">All prices</option>
+                <option value="under-80">Under $80</option>
+                <option value="80-120">$80 - $120</option>
+                <option value="120-150">$120 - $150</option>
+                <option value="above-150">Above $150</option>
+              </select>
+            </label>
+
+            <label>
+              Sort
+              <select data-sort-filter>
+                <option value="featured">Featured</option>
+                <option value="low-high">Price: low to high</option>
+                <option value="high-low">Price: high to low</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="product-grid" data-product-grid></div>
+          <p class="empty-state" data-empty-state hidden>No sneakers match your filters.</p>
+        </div>
+      </section>
+
+      <section class="section checkout-section" id="checkout">
+        <div class="section-shell checkout-layout">
+          <div>
+            <p class="eyebrow">Checkout</p>
+            <h2>Order through WhatsApp without a complex payment system.</h2>
+            <p>
+              Fill in customer details, review the cart, and generate a complete WhatsApp order
+              summary. This is built for small stores that manage orders manually.
+            </p>
+            <div class="payment-note">
+              <strong>Payment Method:</strong>
+              <span>Cash on Delivery / WhatsApp Confirmation</span>
+              <small>No online payment is collected on this demo website.</small>
+            </div>
+          </div>
+
+          <form class="checkout-form" novalidate data-checkout-form>
+            <label>
+              Full Name
+              <input type="text" name="name" autocomplete="name" required minlength="2" />
+            </label>
+            <label>
+              Phone Number
+              <input type="tel" name="phone" autocomplete="tel" required minlength="7" />
+            </label>
+            <label>
+              Email Address
+              <input type="email" name="email" autocomplete="email" required />
+            </label>
+            <label>
+              Delivery Address
+              <textarea name="address" rows="3" required minlength="8"></textarea>
+            </label>
+            <div class="form-row">
+              <label>
+                City
+                <input type="text" name="city" required minlength="2" />
+              </label>
+              <label>
+                Postal Code
+                <input type="text" name="postal" required minlength="3" />
+              </label>
+            </div>
+            <label>
+              Preferred Delivery Time
+              <select name="deliveryTime" required>
+                <option value="">Select time</option>
+                <option>Morning</option>
+                <option>Afternoon</option>
+                <option>Evening</option>
+              </select>
+            </label>
+            <label>
+              Order Notes
+              <textarea name="notes" rows="3" placeholder="Optional delivery notes"></textarea>
+            </label>
+            <p class="form-status" data-form-status aria-live="polite"></p>
+            <button class="button button-primary" type="submit">
+              <i data-lucide="message-circle"></i>
+              Order via WhatsApp
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <section class="section size-section" id="size-guide">
+        <div class="section-shell size-layout">
+          <div>
+            <p class="eyebrow">Size Guide</p>
+            <h2>Simple sneaker size conversion for faster checkout decisions.</h2>
+            <p>Customers can choose sizes inside the product modal before adding items to cart.</p>
+          </div>
+          <div class="size-table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>US Size</th>
+                  <th>UK Size</th>
+                  <th>EU Size</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>7</td>
+                  <td>6</td>
+                  <td>40</td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>7</td>
+                  <td>41</td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td>8</td>
+                  <td>42</td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td>9</td>
+                  <td>43</td>
+                </tr>
+                <tr>
+                  <td>11</td>
+                  <td>10</td>
+                  <td>44</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="section faq-section" id="faq">
+        <div class="section-shell faq-layout">
+          <div class="section-heading">
+            <p class="eyebrow">FAQ</p>
+            <h2>Helpful answers for small-store e-commerce clients.</h2>
+          </div>
+          <div class="faq-list" data-faq-list>
+            <article class="faq-item active">
+              <button type="button" aria-expanded="true">
+                Is this a real payment store?
+                <i data-lucide="chevron-down"></i>
+              </button>
+              <p>No. This demo uses WhatsApp checkout instead of online payment.</p>
+            </article>
+            <article class="faq-item">
+              <button type="button" aria-expanded="false">
+                Can customers select shoe size?
+                <i data-lucide="chevron-down"></i>
+              </button>
+              <p>Yes. Customers can select available sizes before adding items to the cart.</p>
+            </article>
+            <article class="faq-item">
+              <button type="button" aria-expanded="false">
+                Can this be used for other products?
+                <i data-lucide="chevron-down"></i>
+              </button>
+              <p>Yes. The same layout can be customized for clothing, watches, bags, accessories, or electronics.</p>
+            </article>
+            <article class="faq-item">
+              <button type="button" aria-expanded="false">
+                Does the website work on mobile?
+                <i data-lucide="chevron-down"></i>
+              </button>
+              <p>Yes. The design is fully responsive for mobile, tablet, and desktop.</p>
+            </article>
+            <article class="faq-item">
+              <button type="button" aria-expanded="false">
+                Can payment gateway be added later?
+                <i data-lucide="chevron-down"></i>
+              </button>
+              <p>Yes. Stripe, Razorpay, PayPal, or another payment gateway can be added in a future version.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section newsletter-section" id="contact">
+        <div class="section-shell newsletter-box">
+          <div>
+            <p class="eyebrow">Sneaker Updates</p>
+            <h2>Join the drop list for new arrivals and local offers.</h2>
+            <p>This newsletter form is a demo UI for collecting product launch interest.</p>
+          </div>
+          <form class="newsletter-form" novalidate data-newsletter-form>
+            <label>
+              <span class="sr-only">Email address</span>
+              <input type="email" name="email" placeholder="Enter your email" required />
+            </label>
+            <button class="button button-primary" type="submit">Join List</button>
+            <p data-newsletter-status aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <aside class="cart-drawer" aria-label="Shopping cart" data-cart-drawer hidden>
+      <div class="cart-backdrop" data-cart-close></div>
+      <div class="cart-panel">
+        <header>
+          <div>
+            <span>Your Cart</span>
+            <strong data-cart-panel-count>0 items</strong>
+          </div>
+          <button type="button" aria-label="Close cart" data-cart-close>
+            <i data-lucide="x"></i>
+          </button>
+        </header>
+        <div class="cart-items" data-cart-items></div>
+        <div class="cart-footer">
+          <div class="cart-total">
+            <span>Total</span>
+            <strong data-cart-total>$0</strong>
+          </div>
+          <a class="button button-primary" href="#checkout" data-cart-checkout>
+            <i data-lucide="credit-card"></i>
+            Checkout
+          </a>
+          <button class="button button-secondary" type="button" data-clear-cart>Clear Cart</button>
+        </div>
+      </div>
+    </aside>
+
+    <div class="product-modal" data-product-modal hidden></div>
+    <div class="whatsapp-modal" data-whatsapp-modal hidden></div>
+
+    <footer class="site-footer">
+      <div class="section-shell footer-grid">
+        <div>
+          <a class="brand footer-brand" href="#top" aria-label="SneakVault home">
+            <span class="brand-mark">SV</span>
+            <span>
+              SneakVault
+              <small>Mini E-commerce</small>
+            </span>
+          </a>
+          <p>Premium sneakers for everyday movement and modern streetwear.</p>
+        </div>
+        <div>
+          <h3>Shop</h3>
+          <a href="#shop">Running</a>
+          <a href="#shop">Casual</a>
+          <a href="#shop">Streetwear</a>
+          <a href="#shop">Sports</a>
+          <a href="#shop">Premium</a>
+        </div>
+        <div>
+          <h3>Support</h3>
+          <a href="#size-guide">Size Guide</a>
+          <a href="#faq">Delivery Info</a>
+          <a href="#faq">Return Policy</a>
+          <a href="#contact">Contact Us</a>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <span>Email: support@sneakvaultdemo.com</span>
+          <span>Phone: +1 234 567 8900</span>
+          <span>WhatsApp: +1 234 567 8900</span>
+        </div>
+      </div>
+      <div class="section-shell footer-bottom">
+        <span>&copy; 2026 SneakVault. Portfolio demo project only.</span>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" async onload="window.lucide && window.lucide.createIcons()"></script>
+  </body>
+</html>

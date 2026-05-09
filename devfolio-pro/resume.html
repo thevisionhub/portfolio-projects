@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alex Carter | Sample Resume</title>
+    <style>
+      :root {
+        --text: #0f172a;
+        --muted: #475569;
+        --primary: #2563eb;
+        --border: #e2e8f0;
+        --bg: #f8fafc;
+        --card: #ffffff;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        color: var(--text);
+        background: var(--bg);
+        font-family: Inter, Arial, sans-serif;
+        line-height: 1.6;
+      }
+
+      main {
+        width: min(900px, calc(100% - 32px));
+        margin: 40px auto;
+        padding: 36px;
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 8px;
+      }
+
+      h1,
+      h2,
+      h3,
+      p {
+        margin-top: 0;
+      }
+
+      h1 {
+        margin-bottom: 6px;
+        font-size: 2.4rem;
+        line-height: 1.05;
+      }
+
+      h2 {
+        padding-top: 24px;
+        margin-top: 24px;
+        border-top: 1px solid var(--border);
+        font-size: 1.15rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      h3 {
+        margin-bottom: 4px;
+      }
+
+      p,
+      li {
+        color: var(--muted);
+      }
+
+      a {
+        color: var(--primary);
+      }
+
+      .meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        color: var(--muted);
+        font-weight: 700;
+      }
+
+      .tag-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        padding: 0;
+        list-style: none;
+      }
+
+      .tag-list li {
+        padding: 6px 10px;
+        background: #eef5ff;
+        border: 1px solid var(--border);
+        border-radius: 999px;
+        color: var(--text);
+        font-weight: 700;
+      }
+
+      .item {
+        margin-bottom: 18px;
+      }
+
+      @media print {
+        body {
+          background: #ffffff;
+        }
+
+        main {
+          width: 100%;
+          margin: 0;
+          border: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Alex Carter</h1>
+      <p><strong>Frontend Developer & Creative Freelancer</strong></p>
+      <div class="meta">
+        <span>alex.carter@example.com</span>
+        <span>Remote / Available Worldwide</span>
+        <span>Portfolio Demo Resume</span>
+      </div>
+
+      <h2>Summary</h2>
+      <p>
+        Frontend developer focused on building responsive, accessible, and business-ready websites
+        for startups, creators, freelancers, and small businesses.
+      </p>
+
+      <h2>Skills</h2>
+      <ul class="tag-list">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>Tailwind CSS</li>
+        <li>Git</li>
+        <li>GitHub</li>
+        <li>Figma</li>
+      </ul>
+
+      <h2>Selected Projects</h2>
+      <div class="item">
+        <h3>SpiceHub Restaurant Website</h3>
+        <p>Restaurant ordering website with menu browsing, cart summary, and WhatsApp order preview.</p>
+      </div>
+      <div class="item">
+        <h3>TaskFlow SaaS Landing Page</h3>
+        <p>Startup landing page with hero section, pricing, testimonials, FAQ, and contact form.</p>
+      </div>
+      <div class="item">
+        <h3>DevFolio Pro</h3>
+        <p>Reusable personal portfolio template for developers, designers, freelancers, and creators.</p>
+      </div>
+
+      <h2>Education</h2>
+      <p>Sample Degree / Certification - Replace this with real education details.</p>
+
+      <h2>Availability</h2>
+      <p>Available for freelance projects, internships, and remote work opportunities.</p>
+    </main>
+  </body>
+</html>

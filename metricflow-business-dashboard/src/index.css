@@ -1,0 +1,5 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* The direct browser demo uses /styles.css. This file is included for the Vite/Tailwind project structure. */

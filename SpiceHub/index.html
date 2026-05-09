@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="SpiceHub is a modern restaurant ordering website where customers can browse dishes and order directly through WhatsApp."
+    />
+    <title>SpiceHub | Restaurant Website Portfolio Demo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="index.html" aria-label="SpiceHub home">
+        <span class="brand-mark">S</span>
+        <span class="brand-copy">
+          <span>SpiceHub</span>
+          <small>Portfolio Demo</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+        <i data-lucide="menu"></i>
+        <span class="nav-bars" aria-hidden="true"></span>
+        <span class="sr-only">Menu</span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" data-nav>
+        <a href="index.html#home">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="index.html#offers">Offers</a>
+        <a href="index.html#location">Location</a>
+        <a href="index.html#contact">Contact</a>
+        <a class="nav-cta" href="menu.html">
+          <i data-lucide="shopping-bag"></i>
+          View Demo Menu
+        </a>
+      </nav>
+    </header>
+
+    <section class="demo-banner" id="portfolio-demo" role="note" aria-label="Portfolio demo notice">
+      <div class="section-shell demo-banner-inner">
+        <strong>Portfolio demo website</strong>
+        <span>SpiceHub is a fictional restaurant concept. Orders, phone numbers, email, and location details are sample content only.</span>
+      </div>
+    </section>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="section-shell hero-content">
+          <p class="eyebrow">Portfolio demo project</p>
+          <h1>SpiceHub Restaurant Ordering Website Demo.</h1>
+          <p>
+            A fictional restaurant ordering website created for portfolio presentation. Browse the demo menu,
+            test the cart experience, and preview how WhatsApp ordering would work for a real client.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="menu.html">
+              <i data-lucide="shopping-cart"></i>
+              View Demo Menu
+            </a>
+            <a class="button button-light" href="#portfolio-demo">
+              <i data-lucide="utensils"></i>
+              Portfolio Notice
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section popular-section">
+        <div class="section-shell">
+          <div class="section-heading">
+            <p class="eyebrow">Popular picks</p>
+            <h2>Customer favorites</h2>
+          </div>
+          <div class="popular-grid">
+            <article class="food-card compact">
+              <img
+                src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?auto=format&fit=crop&w=900&q=80"
+                alt="Chicken biryani served in a bowl"
+              />
+              <div>
+                <span class="tag">Lunch</span>
+                <h3>Chicken Biryani</h3>
+                <p>Aromatic basmati rice cooked with spices and tender chicken pieces.</p>
+                <strong>$9.99</strong>
+              </div>
+            </article>
+            <article class="food-card compact">
+              <img
+                src="https://images.unsplash.com/photo-1630409351217-bc4fa6422075?auto=format&fit=crop&w=900&q=80"
+                alt="Paneer curry with naan"
+              />
+              <div>
+                <span class="tag">Lunch</span>
+                <h3>Paneer Butter Masala</h3>
+                <p>Soft paneer cubes cooked in creamy tomato-based gravy.</p>
+                <strong>$8.99</strong>
+              </div>
+            </article>
+            <article class="food-card compact">
+              <img
+                src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&w=900&q=80"
+                alt="Pancakes with berries and syrup"
+              />
+              <div>
+                <span class="tag">Breakfast</span>
+                <h3>Pancake Stack</h3>
+                <p>Fluffy pancakes topped with maple syrup and fresh berries.</p>
+                <strong>$6.99</strong>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section offer-band" id="offers">
+        <div class="section-shell">
+          <div class="section-heading">
+            <p class="eyebrow">Limited today</p>
+            <h2>Today&rsquo;s Special Offers</h2>
+          </div>
+          <div class="offer-grid">
+            <article class="offer-card">
+              <span class="offer-price">$24.99</span>
+              <h3>Family Biryani Combo</h3>
+              <p>Get 2 Chicken Biryanis, 2 drinks, and 1 dessert at a special price.</p>
+            </article>
+            <article class="offer-card">
+              <span class="offer-price">$9.99</span>
+              <h3>Breakfast Saver Combo</h3>
+              <p>Masala Dosa, Idli Sambar, and Masala Chai.</p>
+            </article>
+            <article class="offer-card">
+              <span class="offer-price">$14.99</span>
+              <h3>Dinner Delight</h3>
+              <p>Butter Naan, Paneer Butter Masala, and Fresh Lime Soda.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section split-section" id="about">
+        <div class="section-shell split-layout">
+          <div>
+            <p class="eyebrow">About SpiceHub</p>
+            <h2>Fresh, flavorful, and easy to order.</h2>
+            <p>
+              SpiceHub is a modern restaurant serving fresh, flavorful, and affordable meals for food lovers.
+              From traditional Indian dishes to quick snacks and refreshing drinks, our menu is designed to
+              satisfy every craving.
+            </p>
+            <p>
+              Our online ordering website helps customers browse the menu, select dishes, and place orders
+              directly through WhatsApp without downloading any app.
+            </p>
+          </div>
+          <img
+            class="about-image"
+            src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=1200&q=80"
+            alt="Restaurant table with warm lighting"
+          />
+        </div>
+      </section>
+
+      <section class="section" id="why">
+        <div class="section-shell">
+          <div class="section-heading">
+            <p class="eyebrow">Why choose us</p>
+            <h2>Built for convenient direct orders</h2>
+          </div>
+          <div class="feature-grid">
+            <article class="feature-card">
+              <i data-lucide="leaf"></i>
+              <h3>Fresh Ingredients</h3>
+              <p>We use fresh vegetables, quality spices, and trusted ingredients in every dish.</p>
+            </article>
+            <article class="feature-card">
+              <i data-lucide="zap"></i>
+              <h3>Fast Ordering</h3>
+              <p>Customers can place orders directly through WhatsApp in just a few clicks.</p>
+            </article>
+            <article class="feature-card">
+              <i data-lucide="smartphone"></i>
+              <h3>Mobile Friendly</h3>
+              <p>The website works smoothly on mobile, tablet, and desktop devices.</p>
+            </article>
+            <article class="feature-card">
+              <i data-lucide="download-x"></i>
+              <h3>No App Required</h3>
+              <p>Customers can order without installing any extra food delivery app.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section review-section">
+        <div class="section-shell">
+          <div class="section-heading">
+            <p class="eyebrow">Customer reviews</p>
+            <h2>Simple ordering, happy customers</h2>
+          </div>
+          <div class="review-grid">
+            <article class="review-card">
+              <p>&quot;SpiceHub makes ordering food so simple. The menu is clear, and WhatsApp ordering is very convenient.&quot;</p>
+              <strong>&mdash; Emily Carter</strong>
+            </article>
+            <article class="review-card">
+              <p>&quot;The website looks clean and professional. I can quickly check the menu and place my order.&quot;</p>
+              <strong>&mdash; Daniel Smith</strong>
+            </article>
+            <article class="review-card">
+              <p>&quot;Perfect for local restaurants. Simple, fast, and easy to use.&quot;</p>
+              <strong>&mdash; Sophia Johnson</strong>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section location-section" id="location">
+        <div class="section-shell location-layout">
+          <div>
+            <p class="eyebrow">Visit Our Restaurant</p>
+            <h2>Fictional location preview for the portfolio demo.</h2>
+            <p>This section shows where a restaurant map could appear in a real client project. No real SpiceHub restaurant operates at this address.</p>
+            <div class="detail-list">
+              <p><i data-lucide="map-pin"></i> Sample address only, not a real restaurant location</p>
+              <p><i data-lucide="clock"></i> Demo hours only, not real business timings</p>
+            </div>
+          </div>
+          <button class="demo-map-card" type="button" data-demo-action="map">
+            <i data-lucide="map-pinned"></i>
+            <strong>Map disabled for demo</strong>
+            <span>Clicking this shows a portfolio notice instead of opening a real map.</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact">
+        <div class="section-shell contact-layout">
+          <div>
+            <p class="eyebrow">Contact Us</p>
+            <h2>Demo contact details for presentation only.</h2>
+            <div class="contact-details">
+              <p><i data-lucide="phone"></i> Demo phone number, not active</p>
+              <p><i data-lucide="message-circle"></i> Demo WhatsApp flow, no real orders</p>
+              <p><i data-lucide="mail"></i> sample-email@portfolio-demo.test</p>
+              <p><i data-lucide="clock-3"></i> Demo timings only</p>
+            </div>
+          </div>
+          <form class="contact-form" novalidate data-contact-form>
+            <label>
+              Name
+              <input type="text" name="name" autocomplete="name" required minlength="2" />
+            </label>
+            <label>
+              Phone or Email
+              <input type="text" name="contact" autocomplete="email" required />
+            </label>
+            <label>
+              Message
+              <textarea name="message" rows="4" required minlength="10"></textarea>
+            </label>
+            <p class="form-status" data-form-status aria-live="polite"></p>
+            <button class="button button-primary" type="submit">
+              <i data-lucide="send"></i>
+              Send Message
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="section-shell footer-showcase">
+        <a class="footer-brand" href="index.html" aria-label="SpiceHub home">
+          <span class="brand-mark">S</span>
+          <span>SpiceHub</span>
+        </a>
+        <p>&copy; 2026 SpiceHub. Fresh food, direct orders.</p>
+        <a class="footer-whatsapp" href="menu.html#menu" data-demo-action="whatsapp">
+          <i data-lucide="message-circle"></i>
+          Order on WhatsApp
+        </a>
+        <div class="portfolio-credit">
+          <span>Portfolio Website</span>
+          <strong>SpiceHub Restaurant Ordering Website</strong>
+          <p>This is a fictional demo project. It does not accept real orders, reservations, calls, emails, or restaurant visits.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" async onload="window.lucide && window.lucide.createIcons()"></script>
+  </body>
+</html>

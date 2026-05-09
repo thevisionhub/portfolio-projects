@@ -1,0 +1,18 @@
+{
+  "name": "sneakvault-mini-ecommerce",
+  "version": "1.0.0",
+  "description": "Premium mini e-commerce store with product filters, cart, checkout UI, and WhatsApp order flow.",
+  "main": "backend.js",
+  "scripts": {
+    "start": "node backend.js"
+  },
+  "keywords": [
+    "mini-ecommerce",
+    "sneaker-store",
+    "cart",
+    "whatsapp-checkout",
+    "portfolio-project"
+  ],
+  "author": "Portfolio Demo",
+  "license": "MIT"
+}
