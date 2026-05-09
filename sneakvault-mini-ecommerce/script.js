@@ -1,5 +1,6 @@
 const CART_KEY = "sneakvault-cart";
 const WHATSAPP_NUMBER = "12345678900";
+const API_BASE_URL = "https://sneakvault-backend-uu6b.onrender.com";
 
 const products = [
   {
